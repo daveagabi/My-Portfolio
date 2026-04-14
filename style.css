@@ -1,0 +1,139 @@
+#GENERAL
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+#NAV
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00adb5;
+}
+
+#HOME
+.home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #555;
+}
+
+#PROFILE
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.profile-container img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    max-width: 400px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+}
+
+.profile-info ul {
+    list-style-type: square;
+}
+
+#PROJECTS
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.projects img {
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
+#CONTACT
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #00adb5;
+}
+
+#HEADINGS
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#RESPONSE
+@media (max-width: 600px) {
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects img {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+}
