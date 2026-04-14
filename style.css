@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #d3b25d;
 }
 
 #NAV
@@ -20,7 +20,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00adb5;
+    color: #9f4f09;
 }
 
 #HOME
@@ -84,6 +84,9 @@ nav a:hover {
 }
 
 #CONTACT
+h1 {
+    text-align: center;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -108,7 +111,7 @@ form button {
 }
 
 form button:hover {
-    background: #00adb5;
+    background: #013032;
 }
 
 #HEADINGS
