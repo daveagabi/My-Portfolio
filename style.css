@@ -82,7 +82,9 @@ nav a:hover {
 .profile-info ul {
     list-style-type: square;
 }
-
+p{
+    color: #000;
+}
 /* PROJECTS */
 .projects {
     display: flex;
@@ -101,6 +103,9 @@ nav a:hover {
 .projects img:hover {
     transform: scale(1.05);
 }
+.projects p{
+    text-align: center;
+}
 
 /* CONTACT */
 h1 {
@@ -108,6 +113,7 @@ h1 {
 }
 p {
     text-align: center;
+    color: #000;
 }
 form {
     display: flex;
