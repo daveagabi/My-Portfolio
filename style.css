@@ -95,7 +95,7 @@ nav a:hover {
     width: 300px;
     margin: 15px;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 1.0s;
 }
 
 .projects img:hover {
@@ -104,6 +104,9 @@ nav a:hover {
 
 /* CONTACT */
 h1 {
+    text-align: center;
+}
+p {
     text-align: center;
 }
 form {
