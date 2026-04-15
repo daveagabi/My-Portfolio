@@ -28,13 +28,18 @@ nav {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
     color: rgb(0, 0, 0);
-    margin: 0 110px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 15px;
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -55,6 +60,53 @@ nav a:hover {
 .home p {
     font-size: 18px;
     color: #555;
+}
+
+/* CTA BUTTONS */
+.cta-buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: #664a22;
+    color: white;
+    border: 2px solid #664a22;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #664a22;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 74, 34, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #664a22;
+    border: 2px solid #664a22;
+}
+
+.btn-secondary:hover {
+    background: #664a22;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 74, 34, 0.3);
 }
 
 /* PROFILE */
@@ -107,7 +159,7 @@ p {
     transform: scale(1.05);
 }
 
-/* CONTACT - ENHANCED */
+/* CONTACT */
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -199,13 +251,6 @@ form button:hover {
 form button:active {
     transform: translateY(0);
 }
-
-/* HEADINGS */
-h1 {
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* RESPONSE */
 @media (max-width: 600px) {
 
@@ -232,13 +277,13 @@ h1 {
     }
 
     nav a {
-        margin: 0 20px;
+        padding: 5px 10px;
         font-size: 14px;
     }
 }
 
 @media (max-width: 768px) {
     nav a {
-        margin: 0 30px;
+        padding: 5px 12px;
     }
 }
